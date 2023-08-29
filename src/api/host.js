@@ -1,2 +1,2 @@
-const host = 'https://tourhunterapi.herokuapp.com';
+const host = 'https://tour-hunter-bakcend.onrender.com';
 export default host;

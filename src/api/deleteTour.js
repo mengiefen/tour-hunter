@@ -10,7 +10,7 @@ const deleteTourAPI = async (token, id) => {
   };
 
   return fetch(
-    `https://tourhunterapi.herokuapp.com/tours/${id}`,
+    `https://tour-hunter-bakcend.onrender.com/tours/${id}`,
     requestOptions,
   )
     .then((response) => response.text())

@@ -15,7 +15,7 @@ const TourDetails = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`https://tourhunterapi.herokuapp.com/tours/${id}`)
+    fetch(`https://tour-hunter-bakcend.onrender.com/tours/${id}`)
       .then((response) => response.json())
       .then((result) => {
         dispatch(setTourDetail(result));

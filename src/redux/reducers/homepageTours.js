@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 export const homepageTourAPI = createAsyncThunk('hometour/tours', async () => {
-  const response = await fetch('https://tourhunterapi.herokuapp.com/tours');
+  const response = await fetch('https://tour-hunter-bakcend.onrender.com/tours');
   const data = await response.json();
   return data;
 });

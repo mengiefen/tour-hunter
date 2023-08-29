@@ -24,7 +24,7 @@ const addTourAPI = async (token, formData) => {
   };
 
   return fetch(
-    'https://tourhunterapi.herokuapp.com/tours',
+    'https://tour-hunter-bakcend.onrender.com/tours',
     requestOptions,
   ).then((response) => response.text());
 };

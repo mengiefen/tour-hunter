@@ -1,5 +1,5 @@
 const signOutUser = (user) => {
-  fetch('https://tourhunterapi.herokuapp.com/users/sign_out', {
+  fetch('https://tour-hunter-bakcend.onrender.com/users/sign_out', {
     method: 'DELETE',
     headers: {
       accept: 'application/json',

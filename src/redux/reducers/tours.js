@@ -4,7 +4,7 @@ import deleteTourAPI from '../../api/deleteTour';
 import addTourAPI from '../../api/addTour';
 
 export const fetchTours = createAsyncThunk('tours/fetchTours', async () => {
-  const response = await axios.get('https://tourhunterapi.herokuapp.com/tours');
+  const response = await axios.get('https://tour-hunter-bakcend.onrender.com/tours');
   const data = await response.data;
   return data;
 });
