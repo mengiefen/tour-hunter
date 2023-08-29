@@ -58,7 +58,7 @@ function Homepage() {
           status === 'Loading'
             ? (
               <>
-                <div className="md:h-[100px] flex-1 flex justify-center">
+                <div className="flex-1 flex justify-center -translate-y-[200%]">
                   <Spinner />
                 </div>
               </>
