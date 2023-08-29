@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  purge: {
+    content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  },
   content: [
     './src/**/*.{js,jsx,ts,tsx}',
     './node_modules/tw-elements/dist/js/**/*.js',
