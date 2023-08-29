@@ -28,7 +28,7 @@ function Homepage() {
   }, []);
 
   return (
-    <section className="mx-auto max-w-screen md:max-h-screen">
+    <section className="mx-auto max-w-screen md:max-h-screen relative">
       <div className="mx-auto w-full flex flex-col p-10 mt-10 md:mt-0">
         <h1 className="mx-auto font-bold text-3xl text-black md:mt-[20px]">
           Our Tours
@@ -40,7 +40,7 @@ function Homepage() {
        md:justify-center md:items-center md:min-h-[70vh] md:gap-0"
         style={{ maxWidth: '1028px' }}
       >
-        <div className="hidden md:block">
+        <div className="hidden md:block md:absolute md:left-[100px] md:top-1/2 md:-translate-y-1/2">
           <button
             onClick={() => {
               if (startPoint > 0) {
@@ -74,7 +74,7 @@ function Homepage() {
             ))
         }
 
-        <div className="hidden md:block">
+        <div className="hidden md:block md:absolute md:right-[100px] md:top-1/2 md:-translate-y-1/2">
           <button
             onClick={() => {
               if (startPoint < tours.length - 3) {
